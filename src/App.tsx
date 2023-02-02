@@ -70,15 +70,26 @@ function About() {
   return (
     <div>
       <h2>about</h2>
-      <table>
+      <table className="about">
         <tr>
           <td>
-            vivian!
+            <strong>vivian!</strong>
 
           </td>
           <td>
-            shannon!
+            <strong>shannon!</strong>
 
+          </td>
+        </tr>
+        <tr>
+          <td className="vivian-about-text">
+            <img src="/vvn.png" alt="A picture of Vivian lookin at cilantro" />
+            <div>Vivian is a comics artist, illustrator, basketball pro, and expert chef currently living in Seattle. She can be found wearing the color yellow, often in or near the water (very like a duck), equipped with watercolors and a camera (not like a duck). Vivian tells funny, charming, and kind stories about occurences both everyday and fantastic.</div>
+            <div>Vivian likes fruits and hates carrots.</div>
+            <div>If you see Vivian, ask her to dunk! She can do it! If she says no she is lying.</div>
+          </td>
+          <td>
+            shannon is not a duck
           </td>
         </tr>
       </table>

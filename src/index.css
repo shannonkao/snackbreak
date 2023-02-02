@@ -58,12 +58,34 @@ a {
 .content {
   padding: 1rem;
   overflow: auto;
+  width: 100%;
 }
 
 .footer {
   margin: 1rem;
 }
 
+.about {
+  width: 100%;
+  border: 1px solid black;background-image: linear-gradient(to left, lightblue, yellow, orange);
+}
+
+.about td {
+  border: 1px solid black;
+  width: 50%;
+  padding: 10px;
+}
+.about td img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 150px;
+  border: 2px rgb(248, 76, 104) dashed;
+  margin-bottom: 12px;
+}
+.about td div {
+  margin-bottom: 12px;
+}
 
 /* width */
 ::-webkit-scrollbar {
