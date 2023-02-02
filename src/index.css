@@ -1,0 +1,64 @@
+body, html, #root {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+}
+
+#root > div {
+  display: flex;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, pre, ul {
+  font-family: "Consolas";
+}
+
+pre {
+  font-size: 13px;
+}
+
+ul {
+  list-style-type: '- ';
+}
+
+a {
+  color: blue;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.logo {
+  margin: 0 1rem;
+  max-width: 12rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-right: 3px ridge lightgrey;
+}
+
+.menu a:hover {
+  letter-spacing: 8px;
+  transition: letter-spacing 0.5s ease-in-out;
+}
+
+.title strong {
+  background-image: linear-gradient(to left, lightblue, yellow, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content {
+  margin: 1rem;
+}
+
+.footer {
+  margin: 1rem;
+}
