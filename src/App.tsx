@@ -44,7 +44,7 @@ function Layout() {
           </li>
         </ul>
         <div className="spacer"></div>
-        <pre className="footer">by snack break studios</pre>
+        <pre className="footer">by snack break studio</pre>
       </nav>
 
       <div className="content">
