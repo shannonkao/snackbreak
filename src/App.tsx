@@ -10,6 +10,7 @@ export default function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="snackcontent" element={<SnackContent />} />
           <Route path="surprise" element={<Surprise />} />
         </Route>
       </Routes>
@@ -34,6 +35,9 @@ function Layout() {
           </li>
           <li>
             <Link to="/contact">contact</Link>
+          </li>
+          <li>
+            <Link to="/snackcontent">snack content</Link>
           </li>
           <li>
             <Link to="/surprise">a surprise</Link>
@@ -114,6 +118,16 @@ function Contact() {
       </div>
     </div>
   );
+}
+
+function SnackContent() {
+  return (
+    <div className="snackcontent">
+      <h1>snack content</h1>
+      <img src="/Snacking1.png" />
+      <img src="/Snacking2.png" />
+    </div>
+  )
 }
 
 function Surprise() {

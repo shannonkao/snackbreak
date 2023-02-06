@@ -91,6 +91,10 @@ a {
   margin-bottom: 12px;
 }
 
+.snackcontent img {
+  max-width: 600px;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
