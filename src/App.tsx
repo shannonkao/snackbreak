@@ -23,32 +23,43 @@ function Layout() {
     <>
       <nav className="menu">
         <img className="logo" src="/crocogator.png" />
-        <ul>
-          <li>
-            <Link to="/">home</Link>
-          </li>
-          <li>
-            <Link to="/projects">projects</Link>
-          </li>
-          <li>
-            <Link to="/about">about</Link>
-          </li>
-          <li>
-            <Link to="/contact">contact</Link>
-          </li>
-          <li>
-            <Link to="/snackcontent">snack content</Link>
-          </li>
-          <li>
-            <Link to="/surprise">a surprise</Link>
-          </li>
-        </ul>
+        <span><strong>snack break studio</strong> is a small collective based out of Seattle, WA. We make comics, illustrations and zines of all flavors!
+        </span>
+        
+        <div className="bio-links">Vivian
+        <a href="https://www.vivianlikesfruit.com/" target="_blank" rel="noopener noreferrer">Website</a>
+        <a href="https://www.instagram.com/vivianlikesfruit/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+        
+        <div className="bio-links">
+        Shannon
+        <a href="https://shannonkao.com/" target="_blank" rel="noopener noreferrer">Website</a>
+        <a href="https://twitter.com/mellifics" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+        
         <div className="spacer"></div>
         <pre className="footer">by snack break studio</pre>
       </nav>
 
       <div className="content">
-        <Outlet />
+        <span className="bio">
+            <span><strong>Vivian</strong> is a comics artist, illustrator, basketball pro, and expert chef currently living in Seattle. She can be found wearing the color yellow, often in or near the water (very like a duck), equipped with watercolors and a camera (not like a duck). Vivian tells funny, charming, and kind stories about occurences both everyday and fantastic.</span>
+            <span>Vivian likes fruits and hates carrots.</span>
+            <span>If you see Vivian, ask her to dunk! She can do it! If she says no she is lying.</span>
+        
+        </span>
+        <span className="bio">
+            <span><strong>Shannon</strong> is not a ghost (probably). Shannon has two other things that live in her house. </span>
+            <span>Shannon wears glasses, and owns a kayak, and likes pointy trees. She is good at drawing non moving things (like rocks + bus stops) and moving things (like trees and rivers) and extra moving things (like people (even though she doesn't like it)).</span>
+
+            <span>If you are a mountain, or Sue Bird, give Shannon a call. She would like to be your friend.</span>
+        
+        </span>
+        
+        <div className="snack-comic">
+          <img src="/Snacking1.png" />
+          <img src="/Snacking2.png" />
+        </div>
       </div>
     </>
   );
@@ -57,7 +68,7 @@ function Layout() {
 function Home() {
   return (
     <div>
-      <h2 className="title">time for a <strong>snack</strong>?</h2>
+      
     </div>
   );
 }
@@ -106,15 +117,6 @@ function Contact() {
     <div>
       <h2>contact</h2>
       <div className="test-contact">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus, augue a convallis facilisis, eros magna luctus enim, et pharetra nulla ante sed orci. Quisque hendrerit, sem sed fermentum consectetur, libero diam pharetra nulla, sit amet porttitor diam orci vel tortor. Vestibulum porta orci ac metus hendrerit euismod. Phasellus aliquam eget neque at elementum. Donec iaculis ante sollicitudin ligula rhoncus dapibus. Nunc posuere semper ex, ac blandit metus eleifend a. Nam luctus quam fermentum elit consequat, nec porta augue finibus. Morbi nec eros tempor, cursus orci eu, venenatis libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida sem magna, nec tincidunt sapien venenatis a.
-
-        In hac habitasse platea dictumst. Integer elementum tempus pretium. Nam vestibulum quis diam ut posuere. Donec placerat ex non libero tincidunt auctor. Nam pulvinar pharetra est, accumsan vulputate lorem. Phasellus tempor elit et condimentum accumsan. Integer egestas, metus nec viverra accumsan, lacus tellus bibendum leo, a elementum nisl leo id velit. In ullamcorper nulla a quam iaculis, id malesuada tellus mollis. Fusce eu nibh at massa ultricies pretium.
-
-        Vivamus sit amet viverra nibh. Pellentesque molestie elit ut finibus tempus. Praesent rutrum et nunc vel faucibus. Etiam tincidunt dapibus nunc molestie varius. Duis in suscipit mauris, ut aliquet turpis. Ut elementum justo quis iaculis porta. Vivamus sit amet ante vitae leo suscipit facilisis vel a neque. Sed viverra imperdiet ante. Phasellus at massa diam. Mauris condimentum egestas elit, at lobortis ante egestas nec. Fusce eu rhoncus felis. Donec mattis lorem non venenatis tincidunt. Quisque a risus non urna facilisis malesuada. Praesent vitae est sollicitudin, tempor purus nec, condimentum quam. Donec non quam non dui iaculis sodales.
-
-        Ut vehicula orci in velit dapibus, ut facilisis felis scelerisque. Pellentesque ac tellus venenatis, scelerisque erat vel, commodo lorem. Sed pharetra leo non blandit dictum. Vivamus at velit vitae erat convallis tincidunt quis viverra sem. Mauris ullamcorper id eros vitae finibus. In hac habitasse platea dictumst. Donec non laoreet massa. Integer eleifend nisl orci, vitae consectetur leo porta eget.
-
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis fringilla felis tortor. Curabitur dapibus sapien a congue molestie. In egestas, diam non iaculis rutrum, justo enim tristique purus, et lacinia ante tortor in nisi. Integer accumsan tortor sit amet tortor eleifend, vel porta tortor sagittis. Phasellus interdum rutrum tellus. Sed ornare dignissim condimentum. Suspendisse eleifend purus nec est tempor consectetur. Duis aliquet in arcu vitae mollis. Donec eleifend, lectus ac condimentum malesuada, elit nunc sagittis tortor, eget congue purus ex quis leo.
       </div>
     </div>
   );

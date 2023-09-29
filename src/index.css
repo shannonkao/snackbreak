@@ -38,14 +38,15 @@ a {
 
 .logo {
   margin: 0 1rem;
-  max-width: 12rem;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
   height: 100%;
-  border-right: 3px ridge lightgrey;
+  text-align: center;
+  width: 22rem;
+  padding: 0 1rem;
 }
 
 .menu a:hover {
@@ -59,10 +60,14 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+strong {
+    display: inline;
+}
+
 .content {
   padding: 1rem;
   overflow: auto;
-  width: 100%;
+  width: 50rem;
 }
 
 .footer {
@@ -122,4 +127,35 @@ a {
   border-width: 3px;
   border-right-style: ridge;
   border-bottom-style: ridge;
+}
+.bio {
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+.bio span {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.bio-links {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.bio-links a {
+    border: 1px solid blue;
+    margin:0.25rem;
+    padding: 0.5rem 0;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.snack-comic {
+    display: flex;
+    justify-content: center;
+}
+.snack-comic img {
+    width: 20rem;
+    margin-right: 1rem;
 }
