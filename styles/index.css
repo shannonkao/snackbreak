@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+#vending {
+    width: 50rem;
+    position: relative;
+    display: inline-block;
+}
+#vending img {
+    width: 100%;
+}
+
+.item {
+    position: absolute;
+    text-decoration: none;
+}
+.vending {
+    width: 3rem;
+    height: 4.5rem;
+}
+
+.tooltip {
+    display: block;
+    visibility: hidden;
+    width: 5.25rem;
+    padding: 0.25rem 0;
+    margin-top: -2.65rem;
+    margin-left: -1.315rem;
+    background-color: #fff;
+    color: #2f59c0;
+    border: 2px solid #0b1135;
+    text-align: center;
+}
+.tooltip.pink {
+    color: #fc4ec0;
+}
+.vending:hover .tooltip {
+    visibility: visible;
+}
+#secret {
+    width: 7rem;
+    height: 2.5rem;
+}
+.tooltip::after {
+  content: " ";
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+.tooltip::before {
+  content: " ";
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #0b1135 transparent transparent transparent;
+}
+
+#crocogator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#crocogator img {
+    width: 100%;
+}
+
+#legend {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar {
+    display: inline-block;
+    width: 30rem;
+    margin-left: 0.25rem;
+}
+.content {
+    height: 29rem;
+    overflow: hidden;
+}
+.section {
+    display: block;
+    height: 29rem;
+    overflow-y: scroll;
+}
+
+.photos {
+    width: 95%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+}
+.photo-container {
+    position: relative;
+    display: inline-block;
+    width: 9rem;
+    height: 9rem;
+    overflow: hidden;
+}
+.photo-container img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
