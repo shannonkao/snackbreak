@@ -91,12 +91,12 @@ body {
 .section {
     display: block;
     height: 29rem;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .photos {
     width: 95%;
-    overflow-x: scroll;
+    overflow-x: auto;
     white-space: nowrap;
     margin-bottom: 1rem;
 }
