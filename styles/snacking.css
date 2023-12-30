@@ -1,0 +1,23 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+#snacking {
+    display: flex;
+    width: 70vw;
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: #2f59c0;
+}
+
+.page {
+    margin-right: 0.5rem;
+}
+
+.page img {
+    width: 100%;
+}
