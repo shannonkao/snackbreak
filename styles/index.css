@@ -3,6 +3,10 @@ body {
     font-size: 16px;
 }
 
+a {
+    color: #2f59c0;
+}
+
 #vending {
     width: 50rem;
     position: relative;
@@ -70,7 +74,7 @@ body {
     justify-content: center;
 }
 #crocogator img {
-    width: 100%;
+    width: 80%;
 }
 
 #legend {
@@ -113,4 +117,9 @@ body {
     top: 50%;
     width: 100%;
     -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+.photo-container img.h {
+    width: unset;
+    height: 100%;
 }
