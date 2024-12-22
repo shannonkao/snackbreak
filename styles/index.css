@@ -1,16 +1,23 @@
-body {
+:root {
+    --pink: #fc4ec0;
+    --blue: #2f59c0;
+}
+
+body, html {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
+    margin: 0;
 }
 
 .link {
-    color: #2f59c0;
+    color: var(--blue);
 }
 
 #vending {
-    width: 50rem;
-    position: relative;
-    display: inline-block;
+    width: 30rem;
+    position: fixed;
+    left: 50rem;
+    top: 2rem;
 }
 #vending img {
     width: 100%;
@@ -33,12 +40,12 @@ body {
     margin-top: -2.65rem;
     margin-left: -1.315rem;
     background-color: #fff;
-    color: #2f59c0;
+    color: var(--blue);
     border: 2px solid #0b1135;
     text-align: center;
 }
 .tooltip.pink {
-    color: #fc4ec0;
+    color: var(--pink);
 }
 .vending:hover .tooltip {
     visibility: visible;
@@ -74,32 +81,45 @@ body {
     justify-content: center;
 }
 #crocogator img {
-    width: 80%;
+    width: 50%;
 }
 
-#legend {
-    display: inline-block;
-    list-style-type: none;
-    padding: 0;
+#links {
+    text-align: center;
+}
+#links a {
+    color: var(--blue);
+}
+#links a:hover {
+    color: var(--pink);
 }
 
 .sidebar {
     display: inline-block;
-    width: 30rem;
-    margin-left: 0.25rem;
+    width: 46rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
 }
 .content {
-    height: 29rem;
+    height: 39rem;
     overflow: hidden;
+}
+.content hr {
+    color: #fc4ec0;
+    border-style: dashed;
+    border-width: 2px;
+    padding: 0 5rem;
+    width: 20rem;
+    margin: 2rem auto;
 }
 .section {
     display: block;
-    height: 29rem;
+    height: 39rem;
     overflow-y: auto;
 }
 
 .photos {
-    width: 95%;
+    max-width: 95%;
     overflow-x: auto;
     white-space: nowrap;
     margin-bottom: 1rem;
@@ -107,10 +127,9 @@ body {
 .photo-container {
     position: relative;
     display: inline-block;
-    width: 9rem;
-    height: 9rem;
+    width: 15rem;
+    height: 15rem;
     overflow: hidden;
-    background: #eee;
 }
 .photo-container img {
     position: absolute;
@@ -119,8 +138,45 @@ body {
     width: 100%;
     -webkit-transform: translateY(-50%) translateX(-50%);
 }
-
 .photo-container img.h {
     width: unset;
     height: 100%;
+}
+
+#about > img {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #vending {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: unset;
+    }
+    #vending > img {
+        display: none;
+    }
+    .sidebar, .section, .photos {
+        margin: 0;
+        width: unset;
+        max-width: unset;
+    }
+    .section {
+        height: 100%;
+    }
+    .content {
+        height: 50rem;
+    }
+
+    #about > img {
+        display: block;
+        width: 100%;
+    }
 }
