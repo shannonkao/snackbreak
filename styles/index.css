@@ -147,7 +147,7 @@ body, html {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     body {
         padding: 1rem;
         display: flex;
